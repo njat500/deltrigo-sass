@@ -1,0 +1,51 @@
+.main-index{
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    .titulo-principal{
+        h1{
+            display: flex;
+            align-items: center;
+            color: #ebeef1;
+            font-size: 5rem;
+        }
+    }
+    .seleccion-mayorista{
+        background-color: #A98156;
+        min-height: calc(50vh - 60px);
+        box-sizing: border-box;
+        justify-content: start;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        .churros-mayor{
+            color: black;
+            font-weight: 700;
+            display: inline-flex;
+            flex-direction: column;
+            background-color: #ebeef1;
+            border-radius: 20px;
+            padding: 10px;
+            align-items: center;
+            .lista-churros{
+                display: flex;
+                gap: 10px;
+                }
+            }
+        .donuts-mayor{
+            color: black;
+            font-weight: 700;
+            display: inline-flex;
+            flex-direction: column;
+            background-color: #ebeef1;
+            border-radius: 20px;
+            padding: 10px;
+            align-items: center;
+            .lista-donuts{
+                display: flex;
+                gap: 10px;
+                }
+            }
+        }
+    }

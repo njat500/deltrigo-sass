@@ -1,0 +1,38 @@
+/* Utilities*/
+@import "./utilities/_variables.scss";
+
+/* Base */
+@import "./base/_tipografias.scss";
+@import "./base/_reset.scss";
+
+/* Layout */
+
+/*General*/
+@import "./layout/header";
+@import "./layout/footer";
+
+/*Index*/
+
+@import "./layout/index/body-index";
+@import "./layout/index/main-index";
+
+/*Contacto*/
+
+@import "./layout/contacto/body-contacto";
+@import "./layout/contacto/main-contacto";
+
+/*Nosotros*/
+
+@import "./layout/nosotros/body-nosotros";
+@import "./layout/nosotros/main-nosotros";
+
+/* Components */
+
+@import "./components/navbar";
+@import "./components/logo";
+
+
+/* MediaQ */
+@import "./layout/mediaQ/media1024";
+@import "./layout/mediaQ/media850";
+@import "./layout/mediaQ/mediamin850";

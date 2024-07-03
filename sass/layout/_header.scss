@@ -1,0 +1,35 @@
+.header-container{
+    position: sticky !important;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 28px 12%;
+    transition: all .50s ease;
+    .carrito{
+        display: flex;
+        align-items: center;
+        display: flex;
+        a{
+            margin-right: 25px;
+            margin-left: 10px;
+            color: antiquewhite;
+            font-size: 40px;
+            transition: all .50s ease;
+            &:hover{
+                color:$naranja-principal;
+            }
+        }
+    }
+    #menu-icon{
+        font-size: 35px;
+        color: antiquewhite;
+        cursor: pointer;
+        z-index: 10001;
+        display: none;
+    }
+}
