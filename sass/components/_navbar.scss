@@ -1,0 +1,24 @@
+.navbar{
+    display: flex;
+    background-color: $color-negro;
+    border-radius: 50px;
+    padding: 10px;
+    margin: 0 !important;
+        li{
+            a{
+                .activo-pag{
+                    color:$naranja-principal;
+                }
+                color: antiquewhite;
+                font-size: 1.1rem;
+                font-weight: 500;
+                padding: 5px 0px;
+                margin: 0px 30px;
+                transition: all .50s ease;
+                &:hover{
+                    color:$naranja-principal;
+                }
+                
+            }
+        }
+    }
