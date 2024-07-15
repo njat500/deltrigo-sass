@@ -13,7 +13,10 @@
 /*General*/
 .header-container {
   position: sticky !important;
-  background-color: #2a2a2a;
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   width: 100%;
   top: 0%;
   right: 0%;
@@ -50,6 +53,55 @@ footer {
   footer .footer-mobile .accordion-body {
     background-color: #323232;
     color: #ebeef1; }
+
+/*Inicio*/
+.body-index-inicio {
+  background-image: url(../assets/Resized/bg.webp);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .body-index-inicio main {
+    margin-top: 60px; }
+    .body-index-inicio main .logo-img {
+      display: flex;
+      justify-content: center; }
+    .body-index-inicio main .inicio-pag {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      margin: 0 200px; }
+      .body-index-inicio main .inicio-pag h1 {
+        color: #ebeef1;
+        font-weight: 600;
+        font-size: 60px;
+        margin-top: 15px; }
+        .body-index-inicio main .inicio-pag h1 span {
+          color: #2a2a2a;
+          font-weight: 700; }
+    .body-index-inicio main .seccion-seleccion {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      color: #FDA544;
+      margin-top: 20px;
+      font-weight: 700; }
+      .body-index-inicio main .seccion-seleccion .mayorista a {
+        color: #FDA544; }
+      .body-index-inicio main .seccion-seleccion .minorista a {
+        color: #B831b2; }
+      .body-index-inicio main .seccion-seleccion h2 {
+        background: rgba(255, 255, 255, 0.7);
+        border-radius: 50px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        padding: 10px 50px;
+        transition: all .2s;
+        font-size: 25px; }
+        .body-index-inicio main .seccion-seleccion h2:hover {
+          background-color: #2a2a2a;
+          color: #ebeef1; }
 
 /*Index*/
 .body-index {
@@ -152,7 +204,6 @@ footer {
 /* Components */
 .navbar {
   display: flex;
-  background-color: #2a2a2a;
   border-radius: 50px;
   padding: 10px;
   margin: 0 !important; }
@@ -163,8 +214,6 @@ footer {
     padding: 5px 0px;
     margin: 0px 30px;
     transition: all .50s ease; }
-    .navbar li a .activo-pag {
-      color: #FDA544; }
     .navbar li a:hover {
       color: #FDA544; }
 

@@ -1,0 +1,62 @@
+.body-index-inicio{
+    background-image: url(../assets/Resized/bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    main{
+        margin-top: 60px;
+        .logo-img{
+            display: flex;
+            justify-content: center;
+        }
+        .inicio-pag{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            margin: 0 200px;
+            h1{
+                color: #ebeef1;
+                font-weight: 600;
+                font-size: 60px;
+                margin-top: 15px;
+                span{
+                    color: #2a2a2a;
+                    font-weight: 700
+                }
+            }
+        }
+        .seccion-seleccion{
+            .mayorista{
+                a{
+                    color: $naranja-principal;
+                }
+            }
+            .minorista{
+                a{
+                    color: #B831b2;
+                }
+            }
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            color:$naranja-principal;
+            margin-top: 20px;
+            font-weight: 700;
+            h2{
+                background: rgba(255, 255, 255, 0.7);
+                border-radius: 50px;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(5px);
+                -webkit-backdrop-filter: blur(5px);
+                padding: 10px 50px;
+                transition: all .2s;
+                font-size: 25px;
+                &:hover{
+                    background-color: #2a2a2a;
+                    color: #ebeef1;
+                }
+            }
+        }
+    }
+}
