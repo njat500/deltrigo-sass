@@ -1,0 +1,80 @@
+.section-donut{
+    background-color: #DDA0DA;
+    background-image: url(../assets/sugar-sprinkles-off-white-background__1___1_-removebg-preview.png);
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    h2{
+        color:#ebeef1;
+        font-weight: 600;
+        font-size: 3.75rem;
+        margin: 0 200px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+}
+
+.churros-title{
+    display: grid;
+    grid-template-columns: 75% 25%;
+    h2{
+        font-size: 7rem;
+        font-weight: 700;
+        color: #FDA544;
+        padding: 20px;
+        justify-self: flex-end;
+        margin-right: 100px;
+    }
+}
+
+.churros-section{
+    .churros-title{
+        display: grid;
+        grid-template-columns: 75% 25%;
+        h2{
+            font-size: 7rem;
+            font-weight: 700;
+            color: #FDA544;
+            padding: 20px;
+            justify-self: flex-end;
+            margin-right: 100px;
+        }
+    }
+    .churros-margin{
+        margin-left: 200px;
+        margin-right: 200px;
+        .churros-section-1{
+            display: flex;
+            justify-content: center;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            text-align: center;
+            gap: 30px;
+        }
+    }
+    img{
+        border-radius: 50%;
+        width: 100%;
+        height: auto;
+        object-fit:cover ;
+        object-position: bottom;
+    }
+    .add-carrito{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        text-align: center;
+        a{
+            background-color: #B831B2;
+            color: #ebeef1;
+            padding: 5px 7px;
+            border-radius: 30px;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+@media(max-width:610px){
+    .churros-margin{
+        margin: 0;
+        .churros-section-1{
+            img{
+                width: 180px;
+                height: auto;
+            }
+        }
+    }
+    .section.donut{
+        h2{
+            font-size: 40px;
+        }
+    }
+    .churros-title{
+        h2{
+            font-size: 40px;
+        }
+    }
+    .body-index-inicio{
+        main{
+            .inicio-pag{
+                h1{
+                    font-size: 20px;
+                }
+            }
+        }
+        .seccion-seleccion{
+            h2{
+                a{
+                    font-size: 5px;
+                    padding: 0
+                };
+            }
+        }
+    }
+}
