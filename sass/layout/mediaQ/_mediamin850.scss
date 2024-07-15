@@ -1,0 +1,19 @@
+@media (min-width:851px){
+    footer{
+        .footer-mobile{
+            display: none;
+            .accordion-button{
+                background-color: #2a2a2a;
+            }
+        }
+        .footer-desktop{
+            display: block;
+            display: flex;
+            font-size: .625rem;
+            margin-top: 40px;
+            h3{
+                font-size: 16px;
+            }
+        }
+    }
+}
