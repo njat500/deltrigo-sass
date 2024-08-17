@@ -9,8 +9,8 @@
 }
 }
 
-.main-index{
-    .titulo-principal{
+.main-inicio{
+    .mayorista-titulo{
         h1{
         font-size: 2rem;
         margin-top: 40px;
@@ -27,15 +27,58 @@
             display: none;
         }
     }
+
+    .header-container{
+        #menu-icon{
+        display:block;
+    }
+}
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 200px;
+        background-color: #2a2a2a;
+        display: none;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 10px;
+        transition: all .50s ease;
+        a{
+            display: block;
+            margin: 8px 0;
+            padding: 0px 25px;
+            transition: all .50s ease;
+        }
+    }
+    .navbar.open{
+        right: 2%;
+        display: flex;
+    }
 }
 
 @media(max-width:950px){
-    .churros-margin{
+    .minorista-2-margen{
         margin-left: 50px;
         margin-left: 50px;
-        .churros-title{
+        .minorista-2-titulo{
             margin-right: 0;
             font-size: 5rem;
+        }
+    }
+}
+
+@media(max-width:950px){
+    .body-inicio{
+        main{
+            height: 100%;
+            margin-bottom: 20px;
+            .inicio-1{
+                margin: 0px 50px;
+                h1{
+                    font-size: 40px;
+                }
+            }
         }
     }
 }

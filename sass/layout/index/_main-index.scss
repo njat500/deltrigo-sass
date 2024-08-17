@@ -1,8 +1,8 @@
-.main-index{
+.main-mayorista{
     height: 100vh;
     align-items: center;
     text-align: center;
-    .titulo-principal{
+    .mayorista-title{
         h1{
             display: flex;
             align-items: center;
@@ -10,7 +10,7 @@
             font-size: 5rem;
         }
     }
-    .seleccion-mayorista{
+    .mayorista-1{
         background-color: #A98156;
         min-height: calc(50vh - 60px);
         box-sizing: border-box;
@@ -19,7 +19,7 @@
         display: flex;
         flex-wrap: wrap;
         gap: 10px;
-        .churros-mayor{
+        .mayorista-churros{
             color: black;
             font-weight: 700;
             display: inline-flex;
@@ -28,12 +28,12 @@
             border-radius: 20px;
             padding: 10px;
             align-items: center;
-            .lista-churros{
+            .mayorista-churros-lista{
                 display: flex;
                 gap: 10px;
                 }
             }
-        .donuts-mayor{
+        .mayorista-donuts{
             color: black;
             font-weight: 700;
             display: inline-flex;
@@ -42,7 +42,7 @@
             border-radius: 20px;
             padding: 10px;
             align-items: center;
-            .lista-donuts{
+            .mayorista-donuts-lista{
                 display: flex;
                 gap: 10px;
                 }

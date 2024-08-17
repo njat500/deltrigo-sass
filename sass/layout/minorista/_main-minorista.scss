@@ -1,4 +1,4 @@
-.section-donut{
+.minorista-1{
     background-color: #DDA0DA;
     background-image: url(../assets/sugar-sprinkles-off-white-background__1___1_-removebg-preview.png);
     background-attachment: fixed;
@@ -18,36 +18,24 @@
     }
 }
 
-.churros-title{
-    display: grid;
-    grid-template-columns: 75% 25%;
-    h2{
-        font-size: 7rem;
-        font-weight: 700;
-        color: #FDA544;
-        padding: 20px;
-        justify-self: flex-end;
-        margin-right: 100px;
-    }
-}
-
-.churros-section{
-    .churros-title{
-        display: grid;
-        grid-template-columns: 75% 25%;
+.minorista-2{
+    .minorista-2-titulos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         h2{
             font-size: 7rem;
             font-weight: 700;
             color: #FDA544;
             padding: 20px;
-            justify-self: flex-end;
-            margin-right: 100px;
         }
     }
-    .churros-margin{
+    .minorista-2-margen{
+        margin-top: 20px;
         margin-left: 200px;
         margin-right: 200px;
-        .churros-section-1{
+        .minorista-2-productos{
             display: flex;
             justify-content: center;
             justify-content: space-around;

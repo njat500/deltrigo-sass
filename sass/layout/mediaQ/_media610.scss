@@ -1,21 +1,39 @@
 @media(max-width:610px){
-    .churros-margin{
+    .minorista-1{
+        h2{
+            font-size: 40px;
+        }
+    }
+    .minorista-2{
+    .minorista-2-margen{
         margin: 0;
-        .churros-section-1{
+        margin-top: 20px;
+        .minorista-2-productos{
+            display: flex;
+            flex-direction: column;
+            align-content: center;
             img{
-                width: 180px;
+                width: 150px;
                 height: auto;
             }
         }
     }
-    .section.donut{
+    .minorista-2-titulos{
         h2{
             font-size: 40px;
         }
     }
-    .churros-title{
-        h2{
-            font-size: 40px;
+}
+}
+
+@media(max-width:610px){
+    .body-inicio{
+        main{
+            .inicio-2-btn{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
         }
     }
 }

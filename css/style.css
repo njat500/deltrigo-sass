@@ -46,8 +46,10 @@
     display: none; }
 
 footer {
-  color: #ebeef1 !important;
-  background-color: #2a2a2a; }
+  color: #ebeef1 !important; }
+  footer .footer-desktop {
+    width: 100%;
+    background-color: #2a2a2a; }
   footer .footer-mobile .accordion-button {
     background-color: #2a2a2a;
     color: #ebeef1; }
@@ -56,70 +58,72 @@ footer {
     color: #ebeef1; }
 
 /*Inicio*/
-.body-index-inicio {
+.body-inicio {
   background-image: url(../assets/Resized/bg.webp);
   background-repeat: no-repeat;
   background-size: cover; }
-  .body-index-inicio main {
-    margin-top: 60px; }
-    .body-index-inicio main .logo-img {
+  .body-inicio main {
+    margin-top: 60px;
+    margin-bottom: 5px;
+    height: 100vh; }
+    .body-inicio main .inicio-logo-img {
       display: flex;
       justify-content: center; }
-    .body-index-inicio main .inicio-pag {
+    .body-inicio main .inicio-1 {
       display: flex;
       text-align: center;
       justify-content: center;
       align-items: center;
       padding: 0;
       margin: 0 200px; }
-      .body-index-inicio main .inicio-pag h1 {
+      .body-inicio main .inicio-1 h1 {
         color: #ebeef1;
         font-weight: 600;
         font-size: 60px;
         margin-top: 15px; }
-        .body-index-inicio main .inicio-pag h1 span {
+        .body-inicio main .inicio-1 h1 span {
           color: #2a2a2a;
           font-weight: 700; }
-    .body-index-inicio main .seccion-seleccion {
+    .body-inicio main .inicio-2-btn {
       display: flex;
       gap: 30px;
       justify-content: center;
       color: #FDA544;
       margin-top: 20px;
       font-weight: 700; }
-      .body-index-inicio main .seccion-seleccion .mayorista-btn a {
+      .body-inicio main .inicio-2-btn .inicio-2-mayorista-btn a {
         color: #FDA544; }
-      .body-index-inicio main .seccion-seleccion .minorista a {
+      .body-inicio main .inicio-2-btn .inicio-2-minorista-btn a {
         color: #B831b2; }
-      .body-index-inicio main .seccion-seleccion h2 {
+      .body-inicio main .inicio-2-btn h2 {
         background: rgba(255, 255, 255, 0.7);
         border-radius: 50px;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(5px);
         -webkit-backdrop-filter: blur(5px);
+        padding: 10px 50px;
         transition: all .2s;
-        font-size: 25px;
-        padding: 10px 50px; }
-        .body-index-inicio main .seccion-seleccion h2:hover {
+        font-size: 25px; }
+        .body-inicio main .inicio-2-btn h2:hover {
           background-color: #2a2a2a;
           color: #ebeef1; }
 
 /*Index*/
-.body-index {
+.body-mayorista {
   min-height: 100vh;
   background-color: burlywood;
   color: antiquewhite; }
 
-.main-index {
+.main-mayorista {
   height: 100vh;
   align-items: center;
   text-align: center; }
-  .main-index .titulo-principal h1 {
+  .main-mayorista .mayorista-title h1 {
     display: flex;
     align-items: center;
     color: #ebeef1;
     font-size: 5rem; }
-  .main-index .seleccion-mayorista {
+  .main-mayorista .mayorista-1 {
     background-color: #A98156;
     min-height: calc(50vh - 60px);
     box-sizing: border-box;
@@ -128,7 +132,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     gap: 10px; }
-    .main-index .seleccion-mayorista .churros-mayor {
+    .main-mayorista .mayorista-1 .mayorista-churros {
       color: black;
       font-weight: 700;
       display: inline-flex;
@@ -137,10 +141,10 @@ footer {
       border-radius: 20px;
       padding: 10px;
       align-items: center; }
-      .main-index .seleccion-mayorista .churros-mayor .lista-churros {
+      .main-mayorista .mayorista-1 .mayorista-churros .mayorista-churros-lista {
         display: flex;
         gap: 10px; }
-    .main-index .seleccion-mayorista .donuts-mayor {
+    .main-mayorista .mayorista-1 .mayorista-donuts {
       color: black;
       font-weight: 700;
       display: inline-flex;
@@ -149,12 +153,12 @@ footer {
       border-radius: 20px;
       padding: 10px;
       align-items: center; }
-      .main-index .seleccion-mayorista .donuts-mayor .lista-donuts {
+      .main-mayorista .mayorista-1 .mayorista-donuts .mayorista-donuts-lista {
         display: flex;
         gap: 10px; }
 
 /*Minorista*/
-.section-donut {
+.minorista-1 {
   background-color: #DDA0DA;
   background-image: url(../assets/sugar-sprinkles-off-white-background__1___1_-removebg-preview.png);
   background-attachment: fixed;
@@ -164,7 +168,7 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 0; }
-  .section-donut h2 {
+  .minorista-1 h2 {
     color: #ebeef1;
     font-weight: 600;
     font-size: 3.75rem;
@@ -172,32 +176,22 @@ footer {
     text-align: center;
     margin-bottom: 40px; }
 
-.churros-title {
-  display: grid;
-  grid-template-columns: 75% 25%; }
-  .churros-title h2 {
+.minorista-2 .minorista-2-titulos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .minorista-2 .minorista-2-titulos h2 {
     font-size: 7rem;
     font-weight: 700;
     color: #FDA544;
-    padding: 20px;
-    justify-self: flex-end;
-    margin-right: 100px; }
+    padding: 20px; }
 
-.churros-section .churros-title {
-  display: grid;
-  grid-template-columns: 75% 25%; }
-  .churros-section .churros-title h2 {
-    font-size: 7rem;
-    font-weight: 700;
-    color: #FDA544;
-    padding: 20px;
-    justify-self: flex-end;
-    margin-right: 100px; }
-
-.churros-section .churros-margin {
+.minorista-2 .minorista-2-margen {
+  margin-top: 20px;
   margin-left: 200px;
   margin-right: 200px; }
-  .churros-section .churros-margin .churros-section-1 {
+  .minorista-2 .minorista-2-margen .minorista-2-productos {
     display: flex;
     justify-content: center;
     justify-content: space-around;
@@ -206,20 +200,20 @@ footer {
     text-align: center;
     gap: 30px; }
 
-.churros-section img {
+.minorista-2 img {
   border-radius: 50%;
   width: 100%;
   height: auto;
   object-fit: cover;
   object-position: bottom; }
 
-.churros-section .add-carrito {
+.minorista-2 .add-carrito {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0;
   text-align: center; }
-  .churros-section .add-carrito a {
+  .minorista-2 .add-carrito a {
     background-color: #B831B2;
     color: #ebeef1;
     padding: 5px 7px;
@@ -312,7 +306,7 @@ footer {
   .navbar {
     display: none; } }
 
-.main-index .titulo-principal h1 {
+.main-inicio .mayorista-titulo h1 {
   font-size: 2rem;
   margin-top: 40px; }
 
@@ -320,15 +314,45 @@ footer {
   footer .footer-mobile {
     display: block; }
   footer .footer-desktop {
-    display: none; } }
+    display: none; }
+  .header-container #menu-icon {
+    display: block; }
+  .navbar {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 200px;
+    background-color: #2a2a2a;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 10px;
+    transition: all .50s ease; }
+    .navbar a {
+      display: block;
+      margin: 8px 0;
+      padding: 0px 25px;
+      transition: all .50s ease; }
+  .navbar.open {
+    right: 2%;
+    display: flex; } }
 
 @media (max-width: 950px) {
-  .churros-margin {
+  .minorista-2-margen {
     margin-left: 50px;
     margin-left: 50px; }
-    .churros-margin .churros-title {
+    .minorista-2-margen .minorista-2-titulo {
       margin-right: 0;
       font-size: 5rem; } }
+
+@media (max-width: 950px) {
+  .body-inicio main {
+    height: 100%;
+    margin-bottom: 20px; }
+    .body-inicio main .inicio-1 {
+      margin: 0px 50px; }
+      .body-inicio main .inicio-1 h1 {
+        font-size: 40px; } }
 
 @media (min-width: 951px) {
   footer .footer-mobile {
@@ -342,3 +366,30 @@ footer {
     margin-top: 40px; }
     footer .footer-desktop h3 {
       font-size: 16px; } }
+
+@media (max-width: 850px) {
+  .main-mayorista .mayorista-titulo h1 {
+    font-size: 2rem;
+    margin-top: 40px; } }
+
+@media (max-width: 610px) {
+  .minorista-1 h2 {
+    font-size: 40px; }
+  .minorista-2 .minorista-2-margen {
+    margin: 0;
+    margin-top: 20px; }
+    .minorista-2 .minorista-2-margen .minorista-2-productos {
+      display: flex;
+      flex-direction: column;
+      align-content: center; }
+      .minorista-2 .minorista-2-margen .minorista-2-productos img {
+        width: 150px;
+        height: auto; }
+  .minorista-2 .minorista-2-titulos h2 {
+    font-size: 40px; } }
+
+@media (max-width: 610px) {
+  .body-inicio main .inicio-2-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }

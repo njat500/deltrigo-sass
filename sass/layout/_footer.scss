@@ -1,6 +1,9 @@
 footer{
     color: #ebeef1 !important;
-    background-color: $color-negro;
+    .footer-desktop{
+        width: 100%;
+        background-color: $color-negro;
+    }
     .footer-mobile{
         .accordion-button{
             background-color: #2a2a2a;

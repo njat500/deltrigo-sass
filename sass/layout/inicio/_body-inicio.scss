@@ -1,14 +1,16 @@
-.body-index-inicio{
+.body-inicio{
     background-image: url(../assets/Resized/bg.webp);
     background-repeat: no-repeat;
     background-size: cover;
     main{
         margin-top: 60px;
-        .logo-img{
+        margin-bottom: 5px;
+        height: 100vh;
+        .inicio-logo-img{
             display: flex;
             justify-content: center;
         }
-        .inicio-pag{
+        .inicio-1{
             display: flex;
             text-align: center;
             justify-content: center;
@@ -26,13 +28,13 @@
                 }
             }
         }
-        .seccion-seleccion{
-            .mayorista-btn{
+        .inicio-2-btn{
+            .inicio-2-mayorista-btn{
                 a{
                     color: $naranja-principal;
                 }
             }
-            .minorista{
+            .inicio-2-minorista-btn{
                 a{
                     color: #B831b2;
                 }
@@ -49,9 +51,9 @@
                 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
                 backdrop-filter: blur(5px);
                 -webkit-backdrop-filter: blur(5px);
+                padding: 10px 50px;
                 transition: all .2s;
                 font-size: 25px;
-                padding: 10px 50px;
                 &:hover{
                     background-color: #2a2a2a;
                     color: #ebeef1;
