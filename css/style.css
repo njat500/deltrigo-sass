@@ -87,7 +87,7 @@ footer {
       color: #FDA544;
       margin-top: 20px;
       font-weight: 700; }
-      .body-index-inicio main .seccion-seleccion .mayorista a {
+      .body-index-inicio main .seccion-seleccion .mayorista-btn a {
         color: #FDA544; }
       .body-index-inicio main .seccion-seleccion .minorista a {
         color: #B831b2; }
@@ -97,9 +97,9 @@ footer {
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(5px);
         -webkit-backdrop-filter: blur(5px);
-        padding: 10px 50px;
         transition: all .2s;
-        font-size: 25px; }
+        font-size: 25px;
+        padding: 10px 50px; }
         .body-index-inicio main .seccion-seleccion h2:hover {
           background-color: #2a2a2a;
           color: #ebeef1; }

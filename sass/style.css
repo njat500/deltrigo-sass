@@ -1,0 +1,415 @@
+/* Utilities*/
+/* Base */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none !important;
+  list-style: none !important;
+}
+
+/* Layout */
+/*General*/
+.header-container {
+  position: sticky !important;
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  width: 100%;
+  top: 0%;
+  right: 0%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 12%;
+  transition: all 0.5s ease;
+}
+.header-container .carrito {
+  display: flex;
+  align-items: center;
+  display: flex;
+}
+.header-container .carrito a {
+  margin-right: 25px;
+  margin-left: 10px;
+  color: antiquewhite;
+  font-size: 40px;
+  transition: all 0.5s ease;
+}
+.header-container .carrito a:hover {
+  color: #FDA544;
+}
+.header-container #menu-icon {
+  font-size: 35px;
+  color: antiquewhite;
+  cursor: pointer;
+  z-index: 10001;
+  display: none;
+}
+
+footer {
+  color: #ebeef1 !important;
+  background-color: #2a2a2a;
+}
+footer .footer-mobile .accordion-button {
+  background-color: #2a2a2a;
+  color: #ebeef1;
+}
+footer .footer-mobile .accordion-body {
+  background-color: #323232;
+  color: #ebeef1;
+}
+
+/*Inicio*/
+.body-index-inicio {
+  background-image: url(../assets/Resized/bg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.body-index-inicio main {
+  margin-top: 60px;
+}
+.body-index-inicio main .logo-img {
+  display: flex;
+  justify-content: center;
+}
+.body-index-inicio main .inicio-pag {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0 200px;
+}
+.body-index-inicio main .inicio-pag h1 {
+  color: #ebeef1;
+  font-weight: 600;
+  font-size: 60px;
+  margin-top: 15px;
+}
+.body-index-inicio main .inicio-pag h1 span {
+  color: #2a2a2a;
+  font-weight: 700;
+}
+.body-index-inicio main .seccion-seleccion {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  color: #FDA544;
+  margin-top: 20px;
+  font-weight: 700;
+}
+.body-index-inicio main .seccion-seleccion .mayorista a {
+  color: #FDA544;
+}
+.body-index-inicio main .seccion-seleccion .minorista a {
+  color: #B831b2;
+}
+.body-index-inicio main .seccion-seleccion h2 {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 50px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  padding: 10px 50px;
+  transition: all 0.2s;
+  font-size: 25px;
+}
+.body-index-inicio main .seccion-seleccion h2:hover {
+  background-color: #2a2a2a;
+  color: #ebeef1;
+}
+
+/*Index*/
+.body-index {
+  min-height: 100vh;
+  background-color: burlywood;
+  color: antiquewhite;
+}
+
+.main-index {
+  height: 100vh;
+  align-items: center;
+  text-align: center;
+}
+.main-index .titulo-principal h1 {
+  display: flex;
+  align-items: center;
+  color: #ebeef1;
+  font-size: 5rem;
+}
+.main-index .seleccion-mayorista {
+  background-color: #A98156;
+  min-height: calc(50vh - 60px);
+  box-sizing: border-box;
+  justify-content: start;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.main-index .seleccion-mayorista .churros-mayor {
+  color: black;
+  font-weight: 700;
+  display: inline-flex;
+  flex-direction: column;
+  background-color: #ebeef1;
+  border-radius: 20px;
+  padding: 10px;
+  align-items: center;
+}
+.main-index .seleccion-mayorista .churros-mayor .lista-churros {
+  display: flex;
+  gap: 10px;
+}
+.main-index .seleccion-mayorista .donuts-mayor {
+  color: black;
+  font-weight: 700;
+  display: inline-flex;
+  flex-direction: column;
+  background-color: #ebeef1;
+  border-radius: 20px;
+  padding: 10px;
+  align-items: center;
+}
+.main-index .seleccion-mayorista .donuts-mayor .lista-donuts {
+  display: flex;
+  gap: 10px;
+}
+
+/*Minorista*/
+.section-donut {
+  background-color: #DDA0DA;
+  background-image: url(../assets/sugar-sprinkles-off-white-background__1___1_-removebg-preview.png);
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.section-donut h2 {
+  color: #ebeef1;
+  font-weight: 600;
+  font-size: 3.75rem;
+  margin: 0 200px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.churros-title {
+  display: grid;
+  grid-template-columns: 75% 25%;
+}
+.churros-title h2 {
+  font-size: 7rem;
+  font-weight: 700;
+  color: #FDA544;
+  padding: 20px;
+  justify-self: flex-end;
+  margin-right: 100px;
+}
+
+.churros-section .churros-title {
+  display: grid;
+  grid-template-columns: 75% 25%;
+}
+.churros-section .churros-title h2 {
+  font-size: 7rem;
+  font-weight: 700;
+  color: #FDA544;
+  padding: 20px;
+  justify-self: flex-end;
+  margin-right: 100px;
+}
+.churros-section .churros-margin {
+  margin-left: 200px;
+  margin-right: 200px;
+}
+.churros-section .churros-margin .churros-section-1 {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 30px;
+}
+.churros-section img {
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+.churros-section .add-carrito {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  text-align: center;
+}
+.churros-section .add-carrito a {
+  background-color: #B831B2;
+  color: #ebeef1;
+  padding: 5px 7px;
+  border-radius: 30px;
+}
+
+/*Contacto*/
+.body-contacto {
+  background-color: #333;
+  color: white;
+}
+
+.contacto-main .first-container {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.contacto-main .first-container form {
+  background-color: #555;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.contacto-main .first-container h3 {
+  color: #FDA544;
+}
+
+/*Nosotros*/
+.body-nosotros {
+  background-color: #333;
+  color: white;
+}
+
+.nosotros-container-principal {
+  margin-top: 100px;
+}
+.nosotros-container-principal h2 {
+  font-weight: 700;
+  font-size: 3.25rem;
+  color: #FDA544;
+}
+.nosotros-container-principal .nosotros-container {
+  background-color: #222;
+  margin-top: 10px;
+  border-radius: 20px;
+  text-align: left;
+  padding: 20px;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.nosotros-container-principal .equipo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+.nosotros-container-principal .equipo .miembro {
+  text-align: center;
+  max-width: 200px;
+}
+.nosotros-container-principal .equipo .miembro img {
+  width: 12.5rem;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* Components */
+.navbar {
+  display: flex;
+  border-radius: 50px;
+  padding: 10px;
+  margin: 0 !important;
+}
+.navbar li a {
+  color: antiquewhite;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 5px 0px;
+  margin: 0px 30px;
+  transition: all 0.5s ease;
+}
+.navbar li a:hover {
+  color: #FDA544;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: antiquewhite;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+/* MediaQ */
+@media (max-width: 1024px) {
+  .header-container {
+    padding: 14px 2%;
+    transition: 0.2s;
+  }
+  .navbar a {
+    padding: 5px;
+    margin: 0px 20px;
+  }
+}
+.mayorista-btn h2 a {
+  color: black;
+}
+
+@media (max-width: 950px) {
+  .header-container #menu-icon {
+    display: block;
+  }
+  .navbar {
+    display: none;
+  }
+}
+.main-index .titulo-principal h1 {
+  font-size: 2rem;
+  margin-top: 40px;
+}
+
+@media (max-width: 950px) {
+  footer .footer-mobile {
+    display: block;
+  }
+  footer .footer-desktop {
+    display: none;
+  }
+}
+@media (max-width: 950px) {
+  .churros-margin {
+    margin-left: 50px;
+    margin-left: 50px;
+  }
+  .churros-margin .churros-title {
+    margin-right: 0;
+    font-size: 5rem;
+  }
+}
+@media (min-width: 951px) {
+  footer .footer-mobile {
+    display: none;
+  }
+  footer .footer-mobile .accordion-button {
+    background-color: #2a2a2a;
+  }
+  footer .footer-desktop {
+    display: block;
+    display: flex;
+    font-size: 0.625rem;
+    margin-top: 40px;
+  }
+  footer .footer-desktop h3 {
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=style.css.map */
